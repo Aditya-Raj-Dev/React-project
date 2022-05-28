@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"Aditya Resturant",
+        "payment-method":"",
+        "total-votes":"",
+        "reviews":"",
+        "cost-for-one":"",
+        "categories":["contentinal","pizza"]
+
+    },
+    {
+        "id":1,
+        "name":"Aditya ",
+        "payment-method":"",
+        "total-votes":"",
+        "reviews":"",
+        "cost-for-one":"",
+        "categories":["contentinal","pizza"]
+
+    }
+]
