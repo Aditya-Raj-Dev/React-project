@@ -10,6 +10,7 @@ function Todo ({handleclick}) {
  console.log(todo)
   return (
     <div>
+      
       <h1>Todo App</h1>
         <input type="text" placeholder='Enter todos' onChange={(e)=>settodo(e.target.value)}
          ></input>
