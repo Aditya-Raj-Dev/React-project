@@ -1,21 +1,29 @@
 import React from 'react'
-import { useState } from 'react'
-// import Todoitems from './Todoitems'
-import Todolist from './Todolist';
+import Todolist from "./Todolist"
+import { useState} from 'react'
+import styles from "./App.module.css"
 
-function Todo ({handleclick}) {
-  const [todo, settodo]=useState("");
-  // const [input,setinput]=useState(null)
-  // function
- console.log(todo)
+const Todo = () => {
+    const [todo,settodo]=useState("")
+     const [value,setvalue] = useState([])
+
+     const change=(todo)=>{
+       setvalue([...value, todo])
+       
+     }
   return (
     <div>
-      
-      <h1>Todo App</h1>
-        <input type="text" placeholder='Enter todos' onChange={(e)=>settodo(e.target.value)}
-         ></input>
-        <button onClick={()=>{handleclick(Todo)}}>Add</button>
-        <Todolist/>
+      <div>
+       <Todolist value={value}/>
+      </div>
+     <div >
+        <input type="text"
+       
+         placeholder="   Write Something..."
+          onChange={(e)=>settodo(e.target.value)} />
+        <button onClick={() => change(todo)} >+</button>
+        </div>
+       
     </div>
   )
 }
